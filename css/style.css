@@ -1,0 +1,121 @@
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,5,41,1) 35%, rgba(40,33,88,1) 55%, rgba(0,212,255,1) 100%);
+    background-size: 200% 200%;
+    animation: gradient 60s ease infinite;
+    background-blend-mode: darken;
+    height: 98vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+/* div {
+    border: 1px solid blue;
+} */
+
+.logo {
+    width: 100%;
+}
+
+.menu-superior {
+    text-align: right;
+}
+
+.menu-superior li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.producto {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+
+}
+/* sombra al cuadrado del producto */
+.producto:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0,20);
+    /* le hace zoom */
+}
+
+.producto:hover img{
+    transform: scale(1.2);
+
+}
+.producto figure{
+    transform: scale(1.2);
+    overflow: hidden;
+}
+
+#datos{
+    
+    padding: 15px 30px;
+    
+}
+#botones {
+
+    margin: 20px;
+}
+
+#IngresarBotones {
+    margin: 20px;
+}
+#foto{
+    
+    
+    width: "100"; height: "200";
+}
+.ancho-boton {
+    width: 200px;
+}
+
+/* --linea por debajo-- */
+
+.navbar {
+    position: relative;
+  }
+  
+.navbar li {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid #ff0000; /* Cambia el color y estilo de la línea a tu preferencia */
+    opacity: 0; 
+}
+
+.navbar li:hover::after {
+    opacity: 1;
+}
+
+body {
+    background-color: #f0f0f0; /* Color de fondo deseado */
+  }
+
+#colorText{
+
+color: #f0f0f0;
+
+}
