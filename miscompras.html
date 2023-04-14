@@ -42,40 +42,59 @@
         </div>
       </nav>
 
-      <!-- cuerpo de la pagina -->
-      
-          <!-- titulo -->
-          <h1>Administrador</h1>
-
-
-        </div>
-      </div>
-
-       <!-- pie de pagina -->
-       <footer class="bg-body-tertiary text-black py-4">
+    <!-- titulo -->
+    <h1>Mis compras anteriores</h1>
+    <br>
+    
+            <!-- cuerpo de la pagina -->
+    <main role="main">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-6" style="text-align: left;">
-              <h2>Opciones de Administrador</h2>
-              <ul></ul>
-              <ul>
-                <button><a href="usuarios.html">Mantenedor de Usuarios</a></button>
-              </ul>
-              <ul>
-                <button><a href="ventas.html">Historial de Ventas</a></button>
-              </ul>
-              <ul>
-                <button><a href="#">Mantenedor de Bodega</a></button>
-              </ul>
-              <ul>
-                <button><a href="#">Mantenedor de Productos</a></button>
-              </ul>
-              
-          </div>
+                <table class="table table-hover">
+                    <thead>
+                        <th scope="col">Nro boleta</th>
+                        <th scope="col" class="d-none d-lg-block d-lg-table-cell">Fecha de Venta</th>
+                        <th scope="col">Fecha despacho</th>
+                        <th scope="col">Fecha entrega</th>
+                        <th scope="col">Monto total</th>
+                        <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Estado Actual</th>
+                        <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Detalle</th>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td scope="row">1234</td>
+                        <td scope="col" >21/03/2022</td>
+                        <td scope="col">22/03/2022</td>
+                        <td scope="col">23/03/2022</td>
+                        <td scope="col">$13.000</td>
+                        <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Vendido</td>
+                        <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"> <a href=""> Ver detalle</a></td>
+                        </tr>
+                        <tr>
+                        <td scope="row">3355</td>
+                        <td scope="col">21/03/2022</td>
+                        <td scope="col">22/03/2022</td>
+                        <td scope="col">23/03/2022</td>
+                        <td scope="col">$10.000</td>
+                        <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Despachado</td>
+                        <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"> <a href=""> Ver detalle</a></td>
+                        </tr>
+                        <tr>
+                        <td scope="row">4433</td>
+                        <td scope="col">21/03/2022</td>
+                        <td scope="col">22/03/2022</td>
+                        <td scope="col">23/03/2022</td>
+                        <td scope="col">$8.500</td>
+                        <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Entregado</td>
+                        <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"> <a href=""> Ver detalle</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-      </footer>
-      <!-- pie de pagina -->
+      </main>
+
+          <!-- pie de pagina -->
       <br><br>
       <hr>
       <div class="row">
