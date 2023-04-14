@@ -13,14 +13,16 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand"  href="#">
-            <img src="img/logo 5.png" alt="width="50" height="50" alt="">
-            <img class="carrito" src="img/png-transparent-computer-icons-shopping-cart-encapsulated-postscript-shopping-cart-angle-black-shopping-thumbnail.png" alt="width="50" height="50" alt="carro">
+            <img src="img/logo 5.png" alt="" width="" height="50">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="carrito.html"> <source> <img src="img/carrito.png" alt="" width="" height="30"> <source></a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
               </li>
@@ -43,7 +45,7 @@
       </nav>
 
     <!-- titulo -->
-    <h1>Registro de cliente</h1>
+    <h1 id="colorText">Registro de cliente</h1>
     <br>
 
     <!-- formulario de cliente -->
@@ -55,47 +57,47 @@
                 <div class="col" id="datos">
                     <div class="mb-3">
                       <!-- esto es para ingresar los datos del cliente -->
-                      <label for="rut" class="form-label">rut</label>
-                      <input type="text" placeholder="1234567-k" class="form-control" id="rut" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text">Ingrese un email existente.</div>
+                      <label id="colorText" for="rut" class="form-label">Rut</label>
+                      <input type="text" placeholder="1234567-k" class="form-control" id="rut" aria-describedby="Rut">
+                      <div id="colorText" class="form-text" >Ingrese su Rut.</div>
                     </div>
                     <div class="mb-3">
-                      <label for="nombres" class="form-label">Nombres</label>
-                      <input type="text" class="form-control" id="exampleInputPassword1">
+                      <label id="colorText" for="nombres" class="form-label">Nombres</label>
+                      <input type="text" class="form-control" >
                     </div>
                     <div class="mb-3">
-                      <label for="apellidos" class="form-label">Apellidos</label>
-                      <input type="text" class="form-control" id="exampleInputPassword1">
+                      <label id="colorText" for="apellidos" class="form-label">Apellidos</label>
+                      <input type="text" class="form-control" >
                     </div>
                     <div class="mb-3">
-                      <label for="correo" class="form-label">Correo</label>
-                      <input type="text" class="form-control" id="exampleInputPassword1">
-                      <div id="emailHelp" class="form-text">Ingrese un Correo existente.</div>
+                      <label id="colorText" for="correo" class="form-label">Correo</label>
+                      <input type="text" class="form-control">
+                      <div id="colorText" id="emailHelp" class="form-text">Ingrese un Correo existente.</div>
                     </div>
                     <div class="mb-3">
-                      <label for="direccion" class="form-label">Dirección</label>
-                      <input type="text" class="form-control" id="exampleInputPassword1">
-                      <div id="emailHelp" class="form-text">Ingrese un correo existente.</div>
+                      <label id="colorText" for="direccion" class="form-label">Dirección</label>
+                      <input type="text" class="form-control" >
+                      <div id="colorText" class="form-text">Ingrese un correo existente.</div>
                     </div>
                     <div class="mb-3 form-check">
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Con subcripción</label>
+                      <label id="colorText" class="form-check-label" for="exampleCheck1">Con subcripción</label>
                     </div>
                     <div class="mb-3">
-                      <label for="contraseña" class="form-label">Contraseña</label>
+                      <label id="colorText" for="contraseña" class="form-label">Contraseña</label>
                       <input type="password" class="form-control" id="exampleInputPassword1">
-                      <div id="emailHelp" class="form-text">Ingrese una contraseña posible.</div>
+                      <div id="colorText" class="form-text">Ingrese una contraseña posible.</div>
                     </div>
                     <div class="mb-3">
-                      <label for="confirmarcontreseña" class="form-label">Confirmar contraseña</label>
+                      <label id="colorText" for="confirmarcontreseña" class="form-label">Confirmar contraseña</label>
                       <input type="password" class="form-control" id="exampleInputPassword1">
-                      <div id="emailHelp" class="form-text">Re-ingrese su contraseña nuevamente.</div>
+                      <div id="colorText" class="form-text">Re-ingrese su contraseña nuevamente.</div>
                     </div>
                 </div>
 
                 <!-- foto cliente -->
                 <div class="col" id="foto">
-                  <img src="img/foto-perfil.jpg" alt="" style="border: 3px solid rgb(139, 24, 3);">
+                  <img src="img/foto-perfil.jpg" alt="" style="border: 3px solid rgba(0, 38, 255, 0.788);">
                 </div>
             </div>
             <!-- botones -->
@@ -111,7 +113,7 @@
       <!-- pie de pagina -->
       <br><br>
       <hr>
-      <div class="row">
+      <div id="colorText" class="row">
         <div class="col">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
