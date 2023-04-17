@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Love pets</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body background="red">
+    <div class="container-fluid">
+      <!-- cabecera -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand"  href="#">
+            <img src="img/logo 5.png" alt="" width="" height="50">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="carrito.html"> <source> <img src="img/carrito.png" alt="" width="" height="30"> <source></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="inicio_Admin.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="inicio.html">cerrar sesión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="usuarios.html">Usuarios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="ventas.html">Ventas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Producto.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="administrador.html">Administrador</a>
+            </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-- titulo -->
+    <h1 id="colorText">Productos</h1>
+    <br>
+
+    <!-- formulario de  -->
+    <form action="">
+        <div class="container-fluid">
+            <!-- todos los datos del  -->
+            <div class="row">
+                <!-- datos  -->
+                <div class="col" id="datos">
+                    <div class="mb-3">
+                      <!-- esto es para ingresar los datos  -->
+                      <label id="colorText" for="Id" class="form-label">Id</label>
+                      <input type="text" placeholder="29" class="form-control" id="Id">
+                      <div id="colorText" class="form-text" ></div>
+                    </div>
+                    <div class="mb-3">
+                      <label id="colorText" for="Categoría" class="form-label">Categoría</label>
+                      <input type="text" placeholder="Perros" class="form-control" >
+                    </div>
+                    <div class="mb-3">
+                      <label id="colorText" for="Nombre" class="form-label">Nombre</label>
+                      <input type="text" placeholder="Saco Champion adultos carne y vegetales" class="form-control" >
+                    </div>
+                    <div class="mb-3">
+                      <label id="colorText" for="Descripcion" class="form-label">Descripcion</label>
+                      <input  type="text" class="form-control">
+                      <div id="colorText" id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                      <label id="colorText" for="Precio" class="form-label">Precio</label>
+                      <input type="text" class="form-control" >
+                      <div id="colorText" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                      <label id="colorText" for="Descuento por subscriptor" class="form-label">Descuento por subscriptor</label>
+                      <input type="password" class="form-control">
+                      <div id="colorText" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                      <label id="colorText" for="Descuento por oferta" class="form-label">Descuento por oferta</label>
+                      <input type="password" class="form-control" >
+                      <div id="colorText" class="form-text"></div>
+                    </div>
+                </div>
+                <!-- foto Producto -->
+                <div class="col" id="foto">
+                  <img src="img/champion-2 Producto.jpg" alt="" style="border: 3px solid rgba(0, 38, 255, 0.788);"> 
+                  <div></div>
+                  <br><button>Examinar</button> 
+                </div>
+            </div>
+            <!-- botones -->
+            <div class="row" id="botones">
+                <div class="col text-center">
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                  <button type="reset" class="btn btn-primary">Nuevo</button>
+                  <button type="reset" class="btn btn-primary">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <main role="main">
+      <div>
+          <section class="text-center">
+              <br>
+              <table class="bg-body-tertiary text-black py-4" class="table table-hover">
+                  <thead>
+                      <th scope="col">ID</th>
+                      <th scope="col" class="d-none d-lg-block d-lg-table-cell">Categoria</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col" class="text-end">Descripcion</th>
+                      <th scope="col">Precio</th>
+                      <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">%Desc Sub.</th>
+                      <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">%Desc Oferta</th>
+                  </thead>
+                  <tbody>
+                      <tr>
+                      <td scope="row">1</td>
+                      <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Perros</td>
+                      <td scope="col">Saco Champion adultos carne y vegetales</td>
+                      <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">3 kilos</td>
+                      <td scope="col">$21.900</td>
+                      <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">%10</td>
+                      <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">%15</td>
+                      </td>
+                      </tr>
+                      <tr>
+                      <td scope="row">12</td>
+                      <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Perros</td>
+                      <td scope="col">Saco Champion adultos Carne y Cereales</td>
+                      <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Carne y Cereales 3 kilos</td>
+                      <td scope="col">$20.900</td>
+                      <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">%10</td>
+                      <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">%5</td>
+                      </td>
+                      <tr>
+                      <td scope="row">10</td>
+                      <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Perros</td>
+                      <td scope="col"> Saco Champion cachorros med. y grandes</td>
+                      <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Carne pollo y leche 3 kilos</td>
+                      <td scope="col">$19.900</td>
+                      <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">%10</td>
+                      <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell">%9</td>
+                      </td>
+                    </TFOot>
+                  </tbody>
+              </table>
+          </section>
+      </div>
+    </main>
+      <!-- pie de pagina -->
+      <br><br>
+      <hr>
+      <div id="colorText" class="row">
+        <div class="col">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg>
+          Facebook
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
