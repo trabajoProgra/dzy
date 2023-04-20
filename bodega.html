@@ -56,47 +56,52 @@
 
     <!-- formulario de cliente -->
     <form action="">
-        <div class="container-fluid">
-            <!-- todos los datos del cliente -->
-            <div class="row">
-                <!-- datos del cliente -->
-                <div class="col" id="datos">
-                    <div class="mb-3">
-                      <!-- esto es para ingresar los datos del cliente -->
-                      <label id="colorText" for="id" class="form-label">Categoria</label>
-                      <input type="text" placeholder="Ej: Perro, gato" class="form-control" id="rut" aria-describedby="emailHelp">
-                      <div id="colorText" class="form-text">Ingrese una Categoria</div>
-                    </div>
-                    <div class="mb-3">
-                      <label id="colorText" for="Tipo Usuarios" class="form-label">Nombre</label>
-                      <input type="text" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3">
-                      <label id="colorText" for="Rut" class="form-label">Cantidad</label>
-                      <input type="text" class="form-control" id="exampleInputPassword1">
-                    </div>
-                </div>
-
-                <!-- foto cliente -->
-                <div class="col" id="foto">
-                  <img src="img/foto-perfil.jpg" alt="" style="border: 3px solid rgb(11, 1, 150);">
-                  <ul>
-                    <button>Añadir Imagen</button>
-                    <ul>
-
-                    </ul>
-                  </ul>
-                </div>
+      <div class="container-fluid">
+        <!-- todos los datos del cliente -->
+        <div class="row">
+          <!-- datos del cliente -->
+          <div class="col" id="datos_productos">
+            <div class="dropdown">
+              <label id="colorText" for="dropdown">Categoria</label>
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Perros &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Gato</a>
+                <a class="dropdown-item" href="#">Juguetes</a>
+              </div>
             </div>
-            <!-- botones -->
-            <div class="row" id="botones">
-                <div class="col text-right">
-                  <button type="submit" class="btn btn-primary">Guardar</button>
-                  <button type="reset" class="btn btn-primary">Nuevo</button>
-                  <button type="reset" class="btn btn-primary">Eliminar</button>
-                </div>
+            &nbsp;
+            <div class="dropdown">
+              <label id="colorText" for="dropdown">Nombre&nbsp;&nbsp;</label>
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Saco de alimento MasterDog
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Saco Champion</a>
+                <a class="dropdown-item" href="#">Juguete peluche</a>
+              </div>
             </div>
+            &nbsp;
+            <div class="mb-3 col-sm-6">
+              <label id="colorText" for="Rut" class="form-label">Cantidad</label>
+              <input class="" type="number" id="cantidad" name="cantidad" min="0" max="3" value="0">
+            </div>
+          </div>
+          <div class="col" id="foto">
+            <img src="img/foto vacia.png.jpg" width="250" height="250" alt="" style="border: 3px solid rgb(11, 1, 150);">
+          </div>
         </div>
+        <!-- botones -->
+        <div class="row" id="botones">
+          <div class="col text-right">
+            <button type="reset" class="btn btn-primary">Nuevo</button>
+            <button type="reset" class="btn btn-primary">Agregar</button>
+          </div>
+        </div>
+      </div>
     </form>
           <!-- cuerpo de la pagina -->
           <main role="main">
@@ -115,21 +120,21 @@
                             <td id="colorText" scope="col">Perro</td>
                             <td id="colorText" scope="col">Saco alimentos royal 1KL</td>
                             <td id="colorText" scope="row">Vendido</td>
-                            <td id="colorText" scope="row"><button> Eliminar</button></td>
+                            <td id="colorText" scope="row"><button class="btn btn-primary"> Eliminar</button></td>
                             </tr>
                             <tr>
                             <td id="colorText" scope="row">3355</td>
                             <td id="colorText" scope="col">Gato</td>
                             <td id="colorText" scope="col">Saco alimentos royal 3KL</td>
                             <td id="colorText" scope="row">En bodega</td>
-                            <td id="colorText" scope="row"><button> Eliminar</button></td>
+                            <td id="colorText" scope="row"><button class="btn btn-primary"> Eliminar</button></td>
                             </tr>
                             <tr>
                             <td id="colorText" scope="row">4433</td>
-                            <td id="colorText" scope="col">Leon</td>
+                            <td id="colorText" scope="col">Perro</td>
                             <td id="colorText" scope="col">Saco alimentos royal 8KL</td>
                             <td id="colorText" scope="row">Entregado</td>
-                            <td id="colorText" scope="row"><button> Eliminar</button></td>
+                            <td id="colorText" scope="row"><button class="btn btn-primary"> Eliminar</button></td>
                             </tr>
 
                         </tbody>

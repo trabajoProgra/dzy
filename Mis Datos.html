@@ -47,64 +47,72 @@
 
     <!-- formulario de cliente -->
     <form action="">
-        <div class="container-fluid">
-            <!-- todos los datos del cliente -->
-            <div class="row">
-                <!-- datos del cliente -->
-                <div class="col" id="datos">
-                    <div class="mb-3">
-                      <!-- esto es para ingresar los datos del cliente -->
-                      <label id="colorText" for="rut" class="form-label">Rut</label>
-                      <input type="text" placeholder="111-1" class="form-control" id="rut" aria-describedby="Rut">
-                      <div id="colorText" class="form-text" ></div>
-                    </div>
-                    <div class="mb-3">
-                      <label id="colorText" for="nombres" class="form-label">Nombres</label>
-                      <input type="text" placeholder="Juanito" class="form-control" >
-                    </div>
-                    <div class="mb-3">
-                      <label id="colorText" for="apellidos" class="form-label">Apellidos</label>
-                      <input type="text" placeholder="Alchofa" class="form-control" >
-                    </div>
-                    <div class="mb-3">
-                      <label id="colorText" for="correo" class="form-label">Correo</label>
-                      <input type="text" placeholder="Juanitoalchofa@gmail.com" class="form-control">
-                      <div id="colorText" id="emailHelp" class="form-text"></div>
-                    </div>
-                    <div class="mb-3">
-                      <label id="colorText" for="direccion" class="form-label">Dirección</label>
-                      <input type="text" placeholder="Av. siempre viva" class="form-control" >
-                      <div id="colorText" class="form-text"></div>
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label id="colorText" class="form-check-label" for="exampleCheck1">Con subcripción</label>
-                    </div>
-                    <div class="mb-3">
-                      <label id="colorText" for="contraseña" class="form-label">Contraseña</label>
-                      <input type="password" placeholder="***********" class="form-control" id="exampleInputPassword1">
-                      <div id="colorText" class="form-text"></div>
-                    </div>
-                    <div class="mb-3">
-                      <label id="colorText" for="confirmarcontreseña" class="form-label">Confirmar contraseña</label>
-                      <input type="password" placeholder="***********" class="form-control" id="exampleInputPassword1">
-                      <div id="colorText" class="form-text"></div>
-                    </div>
-                </div>
-                <!-- foto cliente -->
-                <div class="col" id="foto">
-                  <img src="img/foto-perfil.jpg" alt="" style="border: 3px solid rgba(0, 38, 255, 0.788);"> 
-                  <div></div>
-                  <br><button>Examinar</button> 
-                </div>
+      <div class="container-fluid">
+        <!-- todos los datos del cliente -->
+        <div class="row">
+          <!-- datos del cliente -->
+          <div class="col" id="datos">
+            <div class="mb-3 col-sm-6">
+              <!-- esto es para ingresar los datos del cliente -->
+              <label id="colorText" for="rut" class="form-label">Rut</label>
+              <input type="text" placeholder="1234567-k" class="form-control" id="rut" aria-describedby="Rut">
+              <div id="colorText" class="form-text">Ingrese su Rut.</div>
             </div>
-            <!-- botones -->
+            <div class="mb-3 col-sm-6">
+              <label id="colorText" for="nombres" class="form-label">Nombres</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3 col-sm-6">
+              <label id="colorText" for="apellidos" class="form-label">Apellidos</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3 col-sm-6">
+              <label id="colorText" for="correo" class="form-label">Correo</label>
+              <input type="text" class="form-control">
+              <div id="colorText" id="emailHelp" class="form-text">Ingrese un Correo existente.</div>
+            </div>
+            <div class="mb-3 col-sm-6">
+              <label id="colorText" for="direccion" class="form-label">Dirección</label>
+              <input type="text-area" class="form-control">
+              <div id="colorText" class="form-text">Ingrese un correo existente.</div>
+            </div>
+            <div class="mb-3 form-check">
+              <label id="colorText" for="">Subscribirse</label>
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label id="colorText" class="form-check-label" for="exampleCheck1">Deseo subscribirme con un aporte de $3000 mensuales y obtener un 5% de descuento en mis compras.</label>
+            </div>
+            <div class="mb-3 col-sm-6">
+              <label id="colorText" for="contraseña" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+              <div id="colorText" class="form-text">Ingrese una contraseña posible.</div>
+            </div>
+            <div class="mb-3 col-sm-6">
+              <label id="colorText" for="confirmarcontreseña" class="form-label">Confirmar contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+              <div id="colorText" class="form-text">Re-ingrese su contraseña nuevamente.</div>
+            </div>
             <div class="row" id="botones">
-                <div class="col text-center">
-                  <button type="submit" class="btn btn-primary">Guardar</button>
-                  <button type="reset" class="btn btn-primary">Limpiar</button>
-                </div>
+              <div class="col text-center">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <button type="reset" class="btn btn-primary">Limpiar</button>
+              </div>
             </div>
+          </div>
+          <!-- foto cliente -->
+          <tr>
+            <td>
+              <div class="card" style="width: 18rem; height: 340px;">
+                <img src="img/foto-perfil.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+            </td>
+            <td>
+            </div>
+            <div class="form-group">
+              <input type="file" class="form-control-file" id=" colorText">
+            </div>
+            </td>
+          </tr>
+          <!-- botones -->
         </div>
     </form>
 

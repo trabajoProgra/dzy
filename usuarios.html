@@ -61,36 +61,42 @@
             <div class="row">
                 <!-- datos del cliente -->
                 <div class="col" id="datos">
-                    <div class="mb-3">
+                    <div class="mb-3 col-sm-6">
                       <!-- esto es para ingresar los datos del cliente -->
                       <label id="colorText" for="id" class="form-label">ID</label>
                       <input type="text" placeholder="123" class="form-control" id="rut" aria-describedby="emailHelp">
                       <div id="colorText" class="form-text">Ingrese un ID.</div>
                     </div>
-                    <div class="mb-3">
-                      <label id="colorText" for="Tipo Usuarios" class="form-label">Tipo Usuario</label>
-                      <input type="text" class="form-control" id="exampleInputPassword1">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                      <label id="colorText" for="">Tipo de usuario</label>
+                      &nbsp;&nbsp;&nbsp;&nbsp;
+                      <label class="btn btn-secondary active">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Administrador
+                      </label>
+                      <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> Cliente
+                      </label>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 col-sm-6">
                       <label id="colorText" for="Rut" class="form-label">Rut</label>
                       <input type="text" class="form-control" id="exampleInputPassword1">
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 col-sm-6">
                       <label id="colorText" for="Nombres" class="form-label">Nombres</label>
                       <input type="text" class="form-control" id="exampleInputPassword1">
                       <div id="colorText" class="form-text">Ingrese un apellido.</div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 col-sm-6">
                       <label id="colorText" for="Apellidos" class="form-label">Apellidos</label>
                       <input type="text" class="form-control" id="exampleInputPassword1">
                       <div id="colorText" class="form-text">Ingrese un Apellido.</div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 col-sm-6">
                       <label id="colorText" for="contraseña" class="form-label">Correo</label>
                       <input type="password" class="form-control" id="exampleInputPassword1">
                       <div id="colorText" class="form-text">Ingrese un correo.</div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 col-sm-6">
                       <label id="colorText" for="confirmarcontreseña" class="form-label">Direccion</label>
                       <input type="password" class="form-control" id="exampleInputPassword1">
                       <div id="colorText" class="form-text">Re-ingrese su direccion nuevamente.</div>
@@ -99,24 +105,28 @@
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label id="colorText" class="form-check-label" for="exampleCheck1">Con subcripción</label>   
                       </div>
-                      <div class="mb-3">
+                      <div class="mb-3 col-sm-6">
                         <label id="colorText" for="contraseña" class="form-label">Contraseña</label>
                         <input type="password" class="form-control" id="exampleInputPassword1">
-                        <div id="colorText" class="form-text"></div> <button class="btn btn-primary">Generar contraseña</button>
+                        <div id="colorText" class="form-text"></div> 
                       </div>
-                      
+                      <button class="btn btn-primary">Generar contraseña</button>
                 </div>
 
                 <!-- foto cliente -->
-                <div class="col" id="foto">
-                  <img src="img/foto-perfil.jpg" alt="" style="border: 3px solid rgb(11, 1, 150);">
-                  <ul>
-                    <button class="btn btn-primary">Añadir Imagen</button>
-                    <ul>
-
-                    </ul>
-                  </ul>
-                </div>
+                <tr>
+                  <td>
+                    <div class="card" style="width: 18rem; height: 340px;">
+                      <img src="img/foto-perfil.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                  </td>
+                  <td>
+                  </div>
+                  <div class="form-group">
+                    <input type="file" class="form-control-file" id=" colorText">
+                  </div>
+                  </td>
+                </tr>
             </div>
             <!-- botones -->
             <div class="row" id="botones">
@@ -134,49 +144,49 @@
                     <table class="table table-hover">
                         <thead>
                             <th id="colorText" scope="col">ID</th>
-                            <th id="colorText" scope="col" class="d-none d-lg-block d-lg-table-cell">Tipo usuario</th>
+                            <th id="colorText" scope="col">Tipo usuario</th>
                             <th id="colorText" scope="col">Rut</th>
-                            <th id="colorText" scope="col" class="text-end">Nombres</th>
+                            <th id="colorText" scope="col">Nombres</th>
                             <th id="colorText" scope="col">Apellidos</th>
-                            <th id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Correo</th>
-                            <th id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Direccion</th>
-                            <th id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Con suscripcion</th>
-                            <th id="colorText" scope="col" class="text-end">Imagen</th>
+                            <th id="colorText" scope="col">Correo</th>
+                            <th id="colorText" scope="col">Direccion</th>
+                            <th id="colorText" scope="col">Con suscripcion</th>
+                            <th id="colorText" scope="col">Imagen</th>
 
                         </thead>
                         <tbody>
                             <tr>
                             <td id="colorText" scope="row">1234</td>
-                            <td id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Administrador</td>
+                            <td id="colorText" scope="col">Administrador</td>
                             <td id="colorText" scope="col">20.333.244-1</td>
                             <td id="colorText" scope="col">Matias</td>
-                            <td id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Benjamin</td>
-                            <td id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Miramar@gmail.com</td>
-                            <td id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Casas rojas 30</td>
-                            <td id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">No</td>
-                            <td id="colorText" scope="col" class="text-end">##</td>
+                            <td id="colorText" scope="col">Benjamin</td>
+                            <td id="colorText" scope="col">Miramar@gmail.com</td>
+                            <td id="colorText" scope="col">Casas rojas 30</td>
+                            <td id="colorText" scope="col">No</td>
+                            <td id="colorText" scope="col">##</td>
                             </tr>
                             <tr>
                             <td id="colorText" scope="row">3355</td>
-                            <td id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Cliente</td>
+                            <td id="colorText" scope="col">Cliente</td>
                             <td id="colorText" scope="col">20.333.244-2</td>
                             <td id="colorText" scope="col">Gepeto</td>
-                            <td id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Sacul</td>
-                            <td id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">duoc@gmail.com</td>
-                            <td id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">aventureras 2022</td>
-                            <td id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Si</td>
-                            <td id="colorText" scope="col" class="text-end">##</td>
+                            <td id="colorText" scope="col">Sacul</td>
+                            <td id="colorText" scope="col">duoc@gmail.com</td>
+                            <td id="colorText" scope="col">aventureras 2022</td>
+                            <td id="colorText" scope="col">Si</td>
+                            <td id="colorText" scope="col">##</td>
                             </tr>
                             <tr>
                             <td id="colorText" scope="row">4433</td>
-                            <td id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Administrafdor</td>
+                            <td id="colorText" scope="col">Administrafdor</td>
                             <td id="colorText" scope="col">20.333.244-3</td>
                             <td id="colorText" scope="col">Sofia</td>
-                            <td id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Jotar</td>
-                            <td id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">troncoso@gmail.com</td>
-                            <td id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Micasa 22</td>
-                            <td id="colorText" scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Si</td>
-                            <td id="colorText" scope="col" class="text-end">##</td>
+                            <td id="colorText" scope="col">Jotar</td>
+                            <td id="colorText" scope="col">troncoso@gmail.com</td>
+                            <td id="colorText" scope="col">Micasa 22</td>
+                            <td id="colorText" scope="col">Si</td>
+                            <td id="colorText" scope="col">##</td>
                             </tr>
 
                         </tbody>

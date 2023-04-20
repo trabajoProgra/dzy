@@ -60,9 +60,15 @@
                       <input type="text" placeholder="29" class="form-control" id="Id">
                       <div id="colorText" class="form-text" ></div>
                     </div>
-                    <div class="mb-3">
-                      <label id="colorText" for="Categoría" class="form-label">Categoría</label>
-                      <input type="text" placeholder="Perros" class="form-control" >
+                    <div class="dropdown">
+                      <label id="colorText" for="dropdown">Categoria</label>
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Perros
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Gatos</a>
+                        <a class="dropdown-item" href="#">Juguetes</a>
+                      </div>
                     </div>
                     <div class="mb-3">
                       <label id="colorText" for="Nombre" class="form-label">Nombre</label>
