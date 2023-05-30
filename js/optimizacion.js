@@ -1,15 +1,3 @@
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        document.getElementById('menu-superior').outerHTML
-            = this.responseText;
-    }
-}
-xhttp.open('GET', 'menu.html', true);
-xhttp.send();
-
-
-
 // sw.js
 
 self.addEventListener('install', function(event) {
@@ -22,18 +10,6 @@ self.addEventListener('install', function(event) {
     );
   });
 
-  // sw.js
-
-self.addEventListener('install', function(event) {
-    event.waitUntil(
-      caches.open('image-cache').then(function(cache) {
-        return cache.addAll([
-          '/path/to/image1.jpg', // Reemplaza esto con la ruta correcta a tu imagen
-          '/path/to/image2.png' // Puedes agregar más imágenes aquí
-        ]);
-      })
-    );
-  });
 
   // Ejemplo de lazy loading de imágenes
 const images = document.querySelectorAll('img[data-src]');
