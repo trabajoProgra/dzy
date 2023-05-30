@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
 </head>
 
 <body background="red">
@@ -22,7 +27,27 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div id="menu-superior"></div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="carrito.html">
+                <source> <img src="img/carrito.png" alt="" width="" height="30">
+                <source>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="registro.html">Registrarme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="ingresar.html">Iniciar sesión</a>
+            </li>
+          </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
@@ -36,7 +61,7 @@
     <br>
 
     <!-- formulario de cliente -->
-    <form action="">
+    <form id="registro" action="">
       <div class="container-fluid">
         <!-- todos los datos del cliente -->
         <div class="row">
@@ -45,12 +70,12 @@
             <div class="mb-3 col-sm-6">
               <!-- esto es para ingresar los datos del cliente -->
               <label id="colorText" for="rut" class="form-label">Rut</label>
-              <input type="text" placeholder="1234567-k" class="form-control" id="rut" aria-describedby="Rut">
+              <input name="rut" type="text" placeholder="1234567-k" class="form-control" id="rut" aria-describedby="Rut">
               <div id="colorText" class="form-text">Ingrese su Rut.</div>
             </div>
             <div class="mb-3 col-sm-6">
               <label id="colorText" for="nombres" class="form-label">Nombres</label>
-              <input type="text" class="form-control">
+              <input name="username" type="text" class="form-control">
             </div>
             <div class="mb-3 col-sm-6">
               <label id="colorText" for="apellidos" class="form-label">Apellidos</label>
@@ -58,34 +83,27 @@
             </div>
             <div class="mb-3 col-sm-6">
               <label id="colorText" for="correo" class="form-label">Correo</label>
-              <input type="text" class="form-control">
+              <input name="email" type="text" class="form-control">
               <div id="colorText" id="emailHelp" class="form-text">Ingrese un Correo existente.</div>
             </div>
             <div class="mb-3 col-sm-6">
               <label id="colorText" for="direccion" class="form-label">Dirección</label>
-              <input type="text-area" class="form-control">
+              <input type="text" class="form-control">
               <div id="colorText" class="form-text">Ingrese un correo existente.</div>
             </div>
             <div class="mb-3 form-check">
-              <label id="colorText" for="">Subscribirse</label>
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label id="colorText" class="form-check-label" for="exampleCheck1">Deseo subscribirme con un aporte de $3000 mensuales y obtener un 5% de descuento en mis compras.</label>
+              <label id="colorText" class="form-check-label" for="exampleCheck1">Con subcripción</label>
             </div>
             <div class="mb-3 col-sm-6">
               <label id="colorText" for="contraseña" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input name="password" type="password" class="form-control" id="exampleInputPassword1">
               <div id="colorText" class="form-text">Ingrese una contraseña posible.</div>
             </div>
             <div class="mb-3 col-sm-6">
               <label id="colorText" for="confirmarcontreseña" class="form-label">Confirmar contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input name="password2" type="password" class="form-control" id="exampleInputPassword1">
               <div id="colorText" class="form-text">Re-ingrese su contraseña nuevamente.</div>
-            </div>
-            <div class="row" id="botones">
-              <div class="col text-center">
-                <button type="submit" class="btn btn-primary">Guardar</button>
-                <button type="reset" class="btn btn-primary">Limpiar</button>
-              </div>
             </div>
           </div>
           <!-- foto cliente -->
@@ -94,14 +112,18 @@
               <div class="card" style="width: 18rem; height: 340px;">
                 <img src="img/foto-perfil.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-            </td>
-            <td>
-            </div>
-            <div class="form-group">
-              <input type="file" class="form-control-file" id=" colorText">
-            </div>
+                  <a href="#" class="btn btn-primary">Examinar...</a>
+                </div>
             </td>
           </tr>
+          </div>
+          <!-- botones -->
+          <div class="row" id="botones">
+            <div class="col text-center">
+              <button type="submit" class="btn btn-primary">Guardar</button>
+              <button type="reset" class="btn btn-primary">Limpiar</button>
+            </div>
+          </div>
         </div>
     </form>
 
@@ -119,10 +141,15 @@
       </div>
     </div>
   </div>
-  <script src="js/menu.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+    
+    <script src="js/vRegis.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="js/optimizacion.js"></script>
 </body>
 
 </html>
