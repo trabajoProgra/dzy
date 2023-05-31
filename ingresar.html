@@ -33,14 +33,19 @@
     </nav>
     <form action="">
           <div class="col-sm-3 container justify-content-center" id="datos">
+
             <div class="mb-3">
-              <label id="colorText" for="correo" class="form-label">Correo</label>
-              <input type="email" class="form-control">
+              <label id="colorText" for="correoLog" class="form-label">Correo</label>
+              <input name="correoLog" id="correoLog" placeholder="username@example.com" type="email" class="form-control">
+              <div id="colorText" class="form-text">Ingrese un correo registrado</div>
             </div>
+
             <div class="mb-3">
-              <label id="colorText" for="contraseña" class="form-label">Contraseña</label>
-              <input type="password" class="form-control">
+              <label id="colorText" for="contraseñaLog" class="form-label">Contraseña</label>
+              <input name="contraseñaLog" id="contraseñaLog" type="password" class="form-control">
+              <div id="colorText" class="form-text">Ingrese la contraseña del correo</div>
             </div>
+
           </div>
           <div id="ingresarBotones">
             <div class="col text-center">

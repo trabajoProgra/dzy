@@ -39,41 +39,52 @@
                 <div class="col-sm-3" id="datos">
                     <div class="mb-3">
                       <!-- esto es para ingresar los datos  -->
-                      <label id="colorText" for="Id" class="form-label">Id</label>
-                      <input type="text" placeholder="29" class="form-control" id="Id">
-                      <div id="colorText" class="form-text" ></div>
+                      <label id="colorText" for="id" class="form-label">Id</label>
+                      <input name="id" type="text" placeholder="29" class="form-control" id="id">
+                      <div id="colorText" class="form-text" >La id es solamente con numeros</div>
                     </div>
+
                     <label id="colorText" for="Nombre" class="form-label">Categoria</label>
                       <select class="form-select" aria-label="Default select example">
                         <option selected value="1">Perro</option>
                         <option value="2">Gato</option>
                         <option value="3">Juguete</option>
                       </select>
+
                       <br>
                     <div class="mb-3">
-                      <label id="colorText" for="Nombre" class="form-label">Nombre</label>
-                      <input type="text" placeholder="Saco Champion adultos carne y vegetales" class="form-control" >
+                      <label id="colorText" for="nombre" class="form-label">Nombre</label>
+                      <input name="nombre" type="text" id="nombre" placeholder="Saco Champion adultos carne y vegetales" class="form-control" >
+                      <div id="colorText" id="" class="form-text">Ingrese el nombre del Producto</div>
+
                     </div>
+
                     <div class="mb-3">
-                      <label id="colorText" for="Descripcion" class="form-label">Descripcion</label>
-                      <input  type="text" class="form-control">
+                      <label id="colorText" for="descripcion" class="form-label">Descripcion</label>
+                      <input name="descripcion" id="descripcion" type="text" class="form-control">
                       <div id="colorText" id="emailHelp" class="form-text"></div>
                     </div>
+
                     <div class="mb-3">
-                      <label id="colorText" for="Precio" class="form-label">Precio</label>
-                      <input type="text" class="form-control" >
-                      <div id="colorText" class="form-text"></div>
+                      <label id="colorText" for="precio" class="form-label">Precio</label>
+                      <input name="precio" id="precio" type="text" class="form-control" >
+                      <div id="colorText" class="form-text">Ingrese solamente numeros</div>
                     </div>
-                    <div class="mb-3">
+
+                    
                       <label id="colorText" for="Descuento por subscriptor" class="form-label">Descuento por subscriptor</label>
-                      <input type="password" class="form-control">
-                      <div id="colorText" class="form-text"></div>
-                    </div>
-                    <div class="mb-3">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected value="1">No</option>
+                        <option value="2">Si</option>
+                      </select>
+                      <br>    
+                    
                       <label id="colorText" for="Descuento por oferta" class="form-label">Descuento por oferta</label>
-                      <input type="password" class="form-control" >
-                      <div id="colorText" class="form-text"></div>
-                    </div>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected value="1">No</option>
+                        <option value="2">Si</option>
+                      </select>
+
                 </div>
                 <!-- foto Producto -->
                 <div class="col" id="foto">

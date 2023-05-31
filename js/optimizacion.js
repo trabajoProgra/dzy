@@ -4,14 +4,14 @@ self.addEventListener('install', function(event) {
     event.waitUntil(
       caches.open('my-cache').then(function(cache) {
         return cache.addAll([
-          './css/style.css', // Reemplaza esto con la ruta correcta a tu archivo CSS
+          './css/style.css',
         ]);
       })
     );
   });
 
 
-  // Ejemplo de lazy loading de imágenes
+  //lazy loading de imágenes
 const images = document.querySelectorAll('img[data-src]');
 
 const lazyLoad = target => {

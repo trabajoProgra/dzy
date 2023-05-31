@@ -2,13 +2,20 @@ $('#registro').validate({
     "rules": {
         "rut": {
             required: true,
+            rutChileno: true,
         },
-        "username": {
+        "nombre": {
             required: true,
         },
-        "email": {
+        "apellido": {
+            required: true,
+        },
+        "correo": {
             required: true,
             email: true,
+        },
+        "direccion": {
+            required: true,
         },
         "password": {
             required: true,
@@ -23,13 +30,20 @@ $('#registro').validate({
     messages: {
         "rut": {
             required: 'Debe ingresar un RUT',
+            rutChileno: 'El formato del RUT no es correcto',
         },
-        "username": {
+        "nombres": {
             required: 'Debe ingresar un nombre de usuario',
         },
-        "email": {
+        "apellidos": {
+            required: 'Debe ingresar un nombre de usuario',
+        },
+        "correo": {
             required: 'Debe ingresar su correo electrónico',
             email: 'Formato de correo incorrecto'
+        },
+        "direccion": {
+            required: 'Debe ingresar su dirección',
         },
         "password": {
             required: 'Debe ingresar una password',
